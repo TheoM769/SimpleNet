@@ -3,7 +3,7 @@ datasets=('screw')
 dataset_flags=($(for dataset in "${datasets[@]}"; do echo '-d '"${dataset}"; done))
 
 python3 main.py \
---gpu 4 \
+--gpu 0 \
 --seed 0 \
 --log_group simplenet_mvtec \
 --log_project MVTecAD_Results \
